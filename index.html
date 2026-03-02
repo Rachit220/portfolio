@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachit Prajapati | Backend Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+   <style>
+   /* Cursor Styles */
+.custom-cursor {
+    width: 12px; 
+    height: 12px; 
+    background-color: #2574eb; 
+    border-radius: 50%; 
+    position: fixed; 
+    pointer-events: none; 
+    z-index: 9999; 
+    transition: transform 0.1s ease;
+}
+.cursor-hover { 
+    transform: scale(2.5); 
+    background-color: rgba(37, 123, 235, 0.5); 
+}
+
+
+    /* 1. Particle background container */
+    #particles-js { 
+        position: fixed; 
+        width: 100%; 
+        height: 100%; 
+        top: 0; 
+        left: 0; 
+        z-index: -1; 
+    }
+    
+    /* 2. Glassmorphism effect */
+    .glass { 
+        background: rgba(255, 255, 255, 0.03); 
+        backdrop-filter: blur(10px); 
+        border: 1px solid rgba(255, 255, 255, 0.1); 
+    }
+    
+    /* 3. Corrected responsive padding using standard CSS */
+    .section-padding { 
+        padding: 5rem 1rem; 
+    }
+    
+    @media (min-width: 768px) {
+        .section-padding { 
+            padding: 8rem 5rem; 
+        }
+    }
+</style>
+</head>
+<body class="bg-black text-white font-sans">
+    <body class="bg-black text-white font-sans cursor-none"></body>
+    <div class="custom-cursor" id="cursor"></div>
+    <div id="particles-js" class="fixed inset-0 -z-10"></div>
+    <nav class="fixed w-full z-50 p-6 flex justify-between items-center bg-black/50 backdrop-blur-md border-b border-gray-900/40">
+        <div class="text-2xl font-bold text-blue-500">RP.</div>
+        <div class="space-x-8 text-sm font-medium uppercase tracking-widest">
+            <a href="#home" class="hover:text-blue-500">Home</a>
+            <a href="#about" class="hover:text-blue-500">About</a>
+            <a href="#skills" class="hover:text-blue-500">Skills</a>
+            <a href="#projects" class="hover:text-blue-500">Projects</a>
+            <a href="#contact" class="hover:text-blue-500">contact</a>
+            
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-between px-20">
+        <div class="w-1/2">
+            <h2 class="text-xl text-blue-400 font-bold mb-2">HEY, I AM</h2>
+            <h1 class="text-7xl font-black mb-4">RACHIT PRAJAPATI</h1>
+<p class="text-white-500 text-xl mb-6">Python & Django Developer || NLP & Predictive Modeling Enthusiast <span id="auto-type"></span></p>
+            
+            <a href="#about" class="bg-blue-600 px-10 py-4 rounded-full font-bold hover:bg-blue-700 transition">Get Started >></a>
+        </div>
+        <div class="w-1/3">
+            <img src="images/profile.jpg" class="w-64 h-64 rounded-full border-4 border-blue-600 shadow-[0_0_50px_rgba(37,99,235,0.4)]" onerror="this.style.display='none'">
+        </div>
+    </section>
+
+    <section id="about" class="section-padding bg-slate-950/20">
+        <h2 class="text-5xl font-extrabold text-blue-500 mb-16 tracking-tight text-center md:text-left">Engineering Philosophy</h2>
+        
+        <div class="glass p-12 rounded-3xl max-w-6xl mx-auto md:mx-0">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                
+                <div class="space-y-6 text-lg text-gray-300 leading-relaxed">
+                    <p>
+                        I am a Backend Engineer obsessed with modular system architecture and database integrity. Currently interning at <strong>Devstree IT Services</strong>, I am navigating the professional Software Development Life Cycle (SDLC) in a production-ready environment. My technical core is built on Python and Django, but my passion extends to cloud-native technologies and infrastructure optimization.
+                    </p>
+                    <p>
+                        My journey began with a focus on algorithms and complex data manipulation. Over time, that transitioned into a deep fascination with how large systems communicate. I don't just build APIs; I design data flow strategies that are resilient, performant, and secure. My goal is to build backend systems that are invisible because they are so reliable.
+                    </p>
+                
+                </div>
+
+                <div class="bg-blue-900/10 p-8 rounded-2xl border border-blue-900/40">
+                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-sm tracking-widest">Key Accomplishments at Devstree</h3>
+                    <ul class="space-y-4 text-slate-300 text-base">
+                        <li class="flex items-start gap-3">✅ <span><strong>Optimized Query Performance:</strong> Reduced Django ORM query latency by implementation of database indexing.</span></li>
+                        <li class="flex items-start gap-3">✅ <span><strong>API Security Implementation:</strong> Built secure, versioned RESTful API endpoints using Django Rest Framework.</span></li>
+                        <li class="flex items-start gap-3">✅ <span><strong>Process Automation:</strong> Scripted internal data migration tasks, reducing manual errors.</span></li>
+                        <li class="flex items-start gap-3">✅ <span><strong>Production Deployment:</strong> Participated in the Dockerization and containerized deployment workflow.</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-10 border-t border-slate-800 grid md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h4 class="font-bold text-white text-xl mb-2">Scalable Architecture</h4>
+                    <p class="text-sm text-slate-400">Designing systems that adapt and grow with user demand.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-xl mb-2">Data Integrity</h4>
+                    <p class="text-sm text-slate-400">Database optimization, consistency, and safe operations.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-xl mb-2">DevOps Mindset</h4>
+                    <p class="text-sm text-slate-400">CI/CD, containerization, and cloud automation (AWS/Azure).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-10 md:px-20">
+    <h2 class="text-4xl font-bold mb-12 text-blue-500">Technical Skills</h2>
+    
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6">
+        
+        <div class="glass p-6 rounded-2xl flex flex-col items-center gap-3 hover:border-blue-500 border border-transparent transition">
+            <i class="devicon-python-plain colored text-4xl"></i>
+            <span class="text-xs font-bold">Python</span>
+        </div>
+        <div class="glass p-6 rounded-2xl flex flex-col items-center gap-3 hover:border-blue-500 border border-transparent transition">
+            <i class="devicon-tensorflow-original colored text-4xl"></i>
+            <span class="text-xs font-bold">TensorFlow</span>
+        </div>
+        <div class="glass p-6 rounded-2xl flex flex-col items-center gap-3 hover:border-blue-500 border border-transparent transition">
+            <i class="devicon-scikitlearn-original colored text-4xl"></i>
+            <span class="text-xs font-bold">Scikit</span>
+        </div>
+        <div class="glass p-6 rounded-2xl flex flex-col items-center gap-3 hover:border-blue-500 border border-transparent transition">
+            <i class="devicon-numpy-original colored text-4xl"></i>
+            <span class="text-xs font-bold">NumPy</span>
+        </div>
+        <div class="glass p-6 rounded-2xl flex flex-col items-center gap-3 hover:border-blue-500 border border-transparent transition">
+            <i class="devicon-scipy-original colored text-4xl"></i>
+            <span class="text-xs font-bold">SciPy</span>
+        </div>
+
+        <div class="glass p-6 rounded-2xl flex flex-col items-center gap-3 hover:border-blue-500 border border-transparent transition">
+            <i class="devicon-mysql-plain colored text-4xl"></i>
+            <span class="text-xs font-bold">MySQL</span>
+        </div>
+        <div class="glass p-6 rounded-2xl flex flex-col items-center gap-3 hover:border-blue-500 border border-transparent transition">
+            <i class="devicon-postgresql-plain colored text-4xl"></i>
+            <span class="text-xs font-bold">Postgres</span>
+        </div>
+        <div class="glass p-6 rounded-2xl flex flex-col items-center gap-3 hover:border-blue-500 border border-transparent transition">
+            <i class="devicon-sqlite-plain colored text-4xl"></i>
+            <span class="text-xs font-bold">SQLite</span>
+        </div>
+        <div class="glass p-6 rounded-2xl flex flex-col items-center gap-3 hover:border-blue-500 border border-transparent transition">
+            <i class="devicon-sqlalchemy-plain colored text-4xl"></i>
+            <span class="text-xs font-bold">SQLAlchemy</span>
+        </div>
+
+        <div class="glass p-6 rounded-2xl flex flex-col items-center gap-3 hover:border-blue-500 border border-transparent transition">
+            <i class="devicon-docker-plain colored text-4xl"></i>
+            <span class="text-xs font-bold">Docker</span>
+        </div>
+        <div class="glass p-6 rounded-2xl flex flex-col items-center gap-3 hover:border-blue-500 border border-transparent transition">
+            <i class="devicon-git-plain colored text-4xl"></i>
+            <span class="text-xs font-bold">Git</span>
+        </div>
+        <div class="glass p-6 rounded-2xl flex flex-col items-center gap-3 hover:border-blue-500 border border-transparent transition">
+            <i class="devicon-github-original colored text-4xl"></i>
+            <span class="text-xs font-bold">GitHub</span>
+        </div>
+        <div class="glass p-6 rounded-2xl flex flex-col items-center gap-3 hover:border-blue-500 border border-transparent transition">
+            <i class="devicon-pytest-plain colored text-4xl"></i>
+            <span class="text-xs font-bold">Pytest</span>
+        </div>
+
+        <div class="glass p-6 rounded-2xl flex flex-col items-center gap-3 hover:border-blue-500 border border-transparent transition">
+            <i class="devicon-cplusplus-plain colored text-4xl"></i>
+            <span class="text-xs font-bold">C++</span>
+        </div>
+        <div class="glass p-6 rounded-2xl flex flex-col items-center gap-3 hover:border-blue-500 border border-transparent transition">
+            <i class="devicon-html5-plain colored text-4xl"></i>
+            <span class="text-xs font-bold">HTML5</span>
+        </div>
+        <div class="glass p-6 rounded-2xl flex flex-col items-center gap-3 hover:border-blue-500 border border-transparent transition">
+            <i class="devicon-css3-plain colored text-4xl"></i>
+            <span class="text-xs font-bold">CSS3</span>
+        </div>
+    </div>
+</section>
+    <section id="projects" class="py-20 px-10 md:px-20 bg-black">
+    <h2 class="text-5xl font-black mb-16 text-white text-center tracking-tight">Featured Projects</h2>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="group relative overflow-hidden h-[500px] rounded-3xl bg-slate-900 transition-all hover:scale-[1.02]">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
+            <div class="absolute bottom-8 left-8 z-20">
+                <p class="text-blue-400 font-bold uppercase text-xs tracking-widest mb-2">E-Commerce</p>
+                <h3 class="text-2xl font-bold text-white mb-2">Rachit Collection</h3>
+                <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Responsive boutique platform with WhatsApp API integration.</p>
+            </div>
+        </div>
+
+        <div class="group relative overflow-hidden h-[500px] rounded-3xl bg-slate-900 transition-all hover:scale-[1.02]">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
+            <div class="absolute bottom-8 left-8 z-20">
+                <p class="text-blue-400 font-bold uppercase text-xs tracking-widest mb-2">Accessibility</p>
+                <h3 class="text-2xl font-bold text-white mb-2">Voice File Manager</h3>
+                <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Hands-free directory navigation using conversational voice commands.</p>
+            </div>
+        </div>
+
+        <div class="group relative overflow-hidden h-[500px] rounded-3xl bg-slate-900 transition-all hover:scale-[1.02]">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
+            <div class="absolute bottom-8 left-8 z-20">
+                <p class="text-blue-400 font-bold uppercase text-xs tracking-widest mb-2">AI & ML</p>
+                <h3 class="text-2xl font-bold text-white mb-2">Green Shield AI</h3>
+                <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Disaster prediction system using RandomForest Classifier.</p>
+            </div>
+        </div>
+
+        <div class="group relative overflow-hidden h-[500px] rounded-3xl bg-slate-900 transition-all hover:scale-[1.02]">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
+            <div class="absolute bottom-8 left-8 z-20">
+                <p class="text-blue-400 font-bold uppercase text-xs tracking-widest mb-2">Full-Stack</p>
+                <h3 class="text-2xl font-bold text-white mb-2">Book Tracker</h3>
+                <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Production-ready reading management with CLI and REST API.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <footer class="py-20 px-10 md:px-20 border-t border-slate-800">
+        <h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
+        <p class="text-gray-400">Open for opportunities in Python Developement,backend engineering And cloud architecture.</p>
+        <a href="https://github.com/Rachit220" class="inline-block mt-6 bg-blue-600 px-8 py-3 rounded-full font-bold">Visit GitHub</a>
+    </footer>
+<section id="contact" class="py-20 px-10 md:px-20 border-t border-blue-900/20">
+    <div class="max-w-4xl mx-auto">
+<h2 class="text-4xl font-bold mb-16 text-white-500">Contact</h2>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="glass p-10 rounded-3xl">
+                <h3 class="text-xl font-bold mb-6">Resume</h3>
+                <p class="text-gray-400 mb-8">Download my professional resume for details on my internships and technical projects.</p>
+                <a href="resume.pdf" download class="inline-block bg-blue-600 px-8 py-3 rounded-full font-bold hover:bg-blue-700 transition">Download Resume</a>
+            </div>
+
+            <div class="glass p-10 rounded-3xl space-y-6">
+                <h3 class="text-xl font-bold mb-6">Let's Connect</h3>
+                <a href="mailto:rachit.prajapati@email.com" class="block text-gray-300 hover:text-blue-500 transition">
+                    <span class="font-bold">Email:</span> rachitprajapati225@gmail.com
+                </a>
+                <a href="https://linkedin.com/in/your-profile" target="_blank" class="block text-gray-300 hover:text-blue-500 transition">
+                    <span class="font-bold">LinkedIn:</span> linkedin.com/in/rachit-prajapati-aa216b344
+                </a>
+                <a href="https://github.com/Rachit220" target="_blank" class="block text-gray-300 hover:text-blue-500 transition">
+                    <span class="font-bold">GitHub:</span> github.com/Rachit220
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+    // Initialize the particles
+    particlesJS("particles-js", {
+        "particles": {
+            "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+            "color": { "value": "#3b82f6" }, // Blue particle color
+            "shape": { "type": "circle" },
+            "opacity": { "value": 0.5 },
+            "size": { "value": 3 },
+            "line_linked": { "enable": true, "distance": 150, "color": "#3b82f6", "opacity": 0.4, "width": 1 },
+            "move": { "enable": true, "speed": 2 }
+        },
+        "interactivity": {
+            "events": { "onhover": { "enable": true, "mode": "repulse" } }
+        }
+    });
+    // 1. Move the cursor
+const cursor = document.getElementById('cursor');
+document.addEventListener('mousemove', (e) => {
+    // We use requestAnimationFrame for smooth movement
+    requestAnimationFrame(() => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+});
+
+// 2. Add hover effect (only if elements exist)
+document.querySelectorAll('a, button, .group').forEach(el => {
+    el.addEventListener('mouseover', () => cursor.classList.add('cursor-hover'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-hover'));
+});
+</script>
+</body>
+</html>

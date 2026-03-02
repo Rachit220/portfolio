@@ -1,0 +1,25 @@
+/* Glassmorphism effect */
+.glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+/* Smooth hover transition for buttons */
+button, a {
+    transition: all 0.3s ease;
+}
+
+button:hover, a:hover {
+    transform: translateY(-2px);
+}
+
+/* Ensure images look good */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+    #particles-js { position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1; }
+    .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    /* Cleaned up responsive padding */
+    @media (min-width: 768px) { .section-padding { padding: 4rem; } }
